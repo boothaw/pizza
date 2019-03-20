@@ -37,12 +37,12 @@ nav {
 /* pizza type selector */
 
 .pizza-selector-div {
-  width: 500px;
-  height: 500px;
-  border: 1px solid gainsboro;
-  border-top-left-radius: 100%;
-  border-top-right-radius: 100%;
-  margin-top: 2em;
+      height: 15em;
+    width: 30em;
+    border: 1px solid gainsboro;
+    border-top-left-radius: 30em;
+    border-top-right-radius: 30em;
+  
 }
 
 .pizza-selector-div li {
