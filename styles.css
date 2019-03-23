@@ -4,7 +4,7 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
 }
 
@@ -53,7 +53,7 @@ nav {
 
 }
 
-.pizza-selector-div {
+.pizza-img-div {
     height: 15em;
     width: 30em;
     border-top-left-radius: 30em;
@@ -61,13 +61,15 @@ nav {
     border: 1px solid black;
 }
 
-.pizza-selector-div ul {
+.pizza-container-div ul {
   margin: 0px;
   padding: 0px;
+  display: flex;
+  align-items: flex-end;
 }
 
-.pizza-selector-div li {
-  position: absolute;
+.pizza-container-div li {
+    position: absolute;
     font-size: 32px;
     width: 7.5em;
     height: 8em;
@@ -83,7 +85,7 @@ nav {
     border: 1px dashed lightblue;
 }
 
-.pizza-selector-div li a {
+.pizza-container-div li a {
   display: block;
   font-size: 22px;
   height: 8em;
@@ -100,58 +102,26 @@ nav {
   border: 1px dotted pink;
 }
 
-.pizza-selector-div li:nth-of-type(1)  {
+.pizza-container-div li:nth-of-type(1)  {
     transform: rotate(20deg) skew(50deg);
   }
 
-.pizza-selector-div li:nth-of-type(2)  {
+.pizza-container-div li:nth-of-type(2)  {
     transform: rotate(40deg) skew(50deg);
   }
-.pizza-selector-div li:nth-of-type(3)  {
+.pizza-container-div li:nth-of-type(3)  {
     transform: rotate(60deg) skew(50deg);
   }
 
-.pizza-selector-div li:nth-of-type(4)  {
+.pizza-container-div li:nth-of-type(4)  {
     transform: rotate(80deg) skew(50deg);
   }
-.pizza-selector-div li:nth-of-type(5)  {
+.pizza-container-div li:nth-of-type(5)  {
     transform: rotate(100deg) skew(50deg);
   }
 
-.pizza-selector-div li:nth-of-type(6)  {
+.pizza-container-div li:nth-of-type(6)  {
     transform: rotate(120deg) skew(50deg);
   }
 
 
-  /*     display: flex;
-    transform-origin: bottom center;
-    border: 1px solid red;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 70px;
-    height: 250px;
-    margin-left: -35px; */
-
-    /* .pizza-selector-div {
-      display: flex;
-      justify-content: space-around;
-      border: 1px solid white;
-      height: 225px;
-      width: 450px;
-      border-radius: 450px 450px 0 0;
-  } */
-
-  /* .pizza-selector-div span {
-    display: flex;
-    transform-origin: bottom center;
-    border: 1px solid red;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 70px;
-    height: 250px;
-    margin-left: -35px;
-  }
-   */
-  
