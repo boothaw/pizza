@@ -4,7 +4,6 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-direction: column;
 }
 
@@ -14,29 +13,93 @@ button {
     border: none;
 }
 
+/* top nav bar */
+
 nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 4em;
     border: solid red 1px;
+    margin-bottom: 6em;
 }
+
+.nav-checkout-div {
+  display: flex;
+  justify-content: center;
+}
+          /* change this later (below) */
+nav input { 
+  border-radius: 100%;
+  height: 4em;
+  width: 4em;
+  background-color:black;
+}
+
+.favorites-heart-nav {
+  height: 4em;
+  width: 4em;
+}
+
+
+/*  selector and second checkout */
 
 .main-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 90%;
+    justify-content: space-between;
+    width: 80%;
     height: 8em;
     border: 1px solid yellow;
+    margin-bottom: 6em;
 }
 
 /* pizza size selector */
 
+.pizza-size-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pizza-size-div h4 {
+  display: flex;
+  order: -1;
+}
+
+.pizza-size-div div {
+    display: flex; 
+}
+
 .pizza-size-div button {
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 50%;
 }
+
+/* bottom checkout  */
+
+.bottom-checkout-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10em;
+}
+
+.bottom-checkout-div p {
+  font-size: 1.5em;
+  color: white;
+  background-color: black;
+}
+
+.bottom-checkout-div input {
+  border-radius: 100%;
+  background-color: limegreen;
+  height: 4em;
+  width: 4em;
+}
+
+
 
 /* pizza type selector */
 
