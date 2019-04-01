@@ -163,6 +163,11 @@ nav input {
     border: 1px solid black;
     position: absolute;
     bottom: auto;
+    overflow: hidden;
+}
+
+.pizza-img-div img {
+  contain: content;
 }
 
 .pizza-container-div ul {
