@@ -21,12 +21,12 @@ nav {
     justify-content: space-between;
     width: 90%;
     height: 4em;
-    margin: 1em 2em 2em 2em;
+    margin: .75em;
 }
 
 .expand-button {
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: .75em;
 }
 
 .nav-checkout-div {
@@ -55,7 +55,7 @@ nav input {
     flex-direction: column;
     justify-content: center;
     width: 80%;
-    height: 13em;
+    height: 12em;
     margin-bottom: 2em;
 }
 
@@ -63,6 +63,7 @@ nav input {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  margin-bottom: -1em;
 }
 
 /* first div on left -- pizza display type */
@@ -71,12 +72,12 @@ nav input {
   margin-top: 2em;
 }
 
-.pizza-type-display-div h2 {
+.pizza-type-display-div h3 {
   margin-bottom: .5em;
   margin-top: 0em;
 }
 
-.pizza-type-display-div h4 {
+.pizza-type-display-div h5 {
   margin: 0em;
 }
 
@@ -90,7 +91,7 @@ nav input {
   margin-bottom: 3.5em;
 }
 
-.pizza-size-div h3 {
+.pizza-size-div h5 {
   display: flex;
   justify-content: center;
   order: -1;
@@ -117,14 +118,14 @@ nav input {
 
 .bottom-checkout-div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 10em;
   margin-bottom: 1em;
 }
 
 .bottom-checkout-div p {
-  font-size: 1.5em;
+  font-size: 1em;
   color: white;
   background-color: black;
 }
@@ -146,7 +147,7 @@ nav input {
 }
 
 .previous-orders {
-  margin-right: 1.8em;
+  margin-right: 4.4em;
 }
 
 .add-to-favorites {
@@ -156,10 +157,10 @@ nav input {
 /* pizza type selector */
 
 .pizza-container-div {
-    height: 29em;
-    width: 58em;
-    border-top-left-radius: 58em;
-    border-top-right-radius: 58em;
+    height: 20em;
+    width: 40em;
+    border-top-left-radius: 40em;
+    border-top-right-radius: 40em;
     border: 1px solid white;
     display: flex;  
     justify-content: center;
@@ -169,10 +170,10 @@ nav input {
 }
 
 .pizza-img-div {
-    height: 26em;
-    width: 52em;
-    border-top-left-radius: 52em;
-    border-top-right-radius: 52em;
+    height: 18em;
+    width: 36em;
+    border-top-left-radius: 36em;
+    border-top-right-radius: 36em;
     border: 1px solid white;
     position: absolute;
     bottom: auto;
@@ -198,8 +199,8 @@ nav input {
 
 .pizza-container-div li {
     position: absolute;
-    width: 30em;
-    height: 20em;
+    width: 20em;
+    height: 11em;
     -webkit-transform-origin: 100% 100%;
     -moz-transform-origin: 100% 100%;
     -ms-transform-origin: 100% 100%;
@@ -216,7 +217,7 @@ nav input {
 .pizza-container-div li a {
     display: block;
     /* justify-content: center; */
-    font-size: 22px;
+    font-size: 16px;
     /* height: 4em; */
     /* width: 7.5em; */
     position: absolute;
@@ -228,8 +229,8 @@ nav input {
     transform: skew(-60deg) rotate(-75deg);
     /* transition: opacity 0.3s, color 0.3s; */
     overflow: hidden;
-    margin-top: 35%;
-    margin-left: 38%;
+    margin-top: 29%;
+    margin-left: 29%;
     color: white;
     /* border: 1px dashed pink; */
 }
