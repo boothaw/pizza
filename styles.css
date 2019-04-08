@@ -4,14 +4,19 @@ body {
     height: 100vh;
     display: flex;
     align-items: center; 
-    justify-content: space-around;
+    /* justify-content: space-around; */
     flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    overflow-x: hidden;
 }
 
 button {
     background-color: #000;
     color: #fff;
     border: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
 }
 
 /* top nav bar */
@@ -229,8 +234,8 @@ nav input {
     transform: skew(-60deg) rotate(-75deg);
     /* transition: opacity 0.3s, color 0.3s; */
     overflow: hidden;
-    margin-top: 29%;
-    margin-left: 29%;
+    margin-top: 82px;
+    margin-left: 82px;
     color: white;
     /* border: 1px dashed pink; */
 }
@@ -257,9 +262,37 @@ nav input {
     transform: rotate(150deg) skew(60deg);
   }     
 
-  /* -webkit-transform: rotate(70deg) skew(50deg);
-  -ms-transform: rotate(70deg) skew(50deg);
-  -moz-transform: rotate(70deg) skew(50deg);
-  transform: rotate(70deg) skew(50deg);  */
+  /*  -----media queries---- */
+
+  @media only screen and (max-width: 775px) {
+    
+    .pizza-container-div {
+      height: 14em;
+      width: 28em;
+      border-top-left-radius: 28em;
+      border-top-right-radius: 28em;
+      transform: rotate(90deg);
+      align-self: flex-start;
+      /* position: fixed;
+      left: -4em;
+      top: 20em; */
+    }
+
+    .pizza-img-div {
+      height: 12em;
+      width: 24em;
+      border-top-left-radius: 24em;
+      border-top-right-radius: 24em;
+    }
+
+    .favorites-selector-div {
+      display: none;
+    }
+
+    .main-content {
+      width: 100%;
+    }
+
+  }
 
 
