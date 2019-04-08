@@ -265,7 +265,81 @@ nav input {
   /*  -----media queries---- */
 
   @media only screen and (max-width: 775px) {
-    
+    nav {
+      border-bottom: white 1px solid;
+      height: 3em;
+      margin: 0;
+    }
+
+    .expand-button {
+      padding: 0;
+    }
+
+    /* main content div */
+
+    .main-content {
+      width: 90%;
+      height: 7em;
+      margin-bottom: 0;
+    }
+
+    .main-content-top {
+      margin-bottom: 0px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    .pizza-type-display-div {
+      font-size: .75em;
+      margin-top: 1em;
+      border-right: 1px solid white;
+      padding-right: 1em;
+    }
+
+    .pizza-size-div {
+      margin-bottom: 0;
+      border-right: 1px solid white;
+    padding-right: 1em;
+    }
+
+    .pizza-size-div h5 {
+      margin-bottom: 1em;
+      font-size: .75em;
+    }
+
+    .pizza-size-div button {
+      width: 2.5em;
+      height: 2.5em;
+      font-size: 1em;
+    }
+
+    .bottom-checkout-div {
+      margin-bottom: 0em;
+      width: 7em;
+      
+    }
+
+    .bottom-checkout-div p {
+      margin: .5em .2em;
+      font-size: .9em;
+      width: 60%;
+    }
+
+    .favorites-selector-div {
+      display: none;
+    }
+
+    /*  pizza selector div */
+
+    .bottom-pizza-div {
+      width: 100%;
+      margin-top: 150px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
     .pizza-container-div {
       height: 14em;
       width: 28em;
@@ -273,9 +347,16 @@ nav input {
       border-top-right-radius: 28em;
       transform: rotate(90deg);
       align-self: flex-start;
+      position: absolute;
+      left: -7em;
+      bottom: -12em;
       /* position: fixed;
       left: -4em;
       top: 20em; */
+    }
+
+    .pizza-container-div ul {
+      display: none;
     }
 
     .pizza-img-div {
@@ -285,13 +366,6 @@ nav input {
       border-top-right-radius: 24em;
     }
 
-    .favorites-selector-div {
-      display: none;
-    }
-
-    .main-content {
-      width: 100%;
-    }
 
   }
 
