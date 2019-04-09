@@ -294,13 +294,13 @@ nav input {
       font-size: .75em;
       margin-top: 1em;
       border-right: 1px solid white;
-      padding-right: 1em;
+      padding-right: 3%;
+      max-width: 120px;
     }
 
     .pizza-size-div {
       margin-bottom: 0;
-      border-right: 1px solid white;
-    padding-right: 1em;
+      padding-right: 1em;
     }
 
     .pizza-size-div h5 {
@@ -317,7 +317,8 @@ nav input {
     .bottom-checkout-div {
       margin-bottom: 0em;
       width: 7em;
-      
+      border-left: 1px solid white;
+      padding: 2%;
     }
 
     .bottom-checkout-div p {
@@ -334,38 +335,66 @@ nav input {
 
     .bottom-pizza-div {
       width: 100%;
-      margin-top: 150px;
-      position: relative;
+      height: 28em;
+      /* margin-top: 150px; */
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 
     .pizza-container-div {
-      height: 14em;
-      width: 28em;
-      border-top-left-radius: 28em;
-      border-top-right-radius: 28em;
+      height: 12em;
+      width: 24em;
+      border-top-left-radius: 24em;
+      border-top-right-radius: 24em;
       transform: rotate(90deg);
-      align-self: flex-start;
-      position: absolute;
+      align-self: center;
+      position: relative;
       left: -7em;
-      bottom: -12em;
+      /* position: absolute;
+      left: -8em;
+      bottom: -21em; */
       /* position: fixed;
       left: -4em;
       top: 20em; */
     }
 
-    .pizza-container-div ul {
+
+    .pizza-img-div {
+      height: 11em;
+      width: 22em;
+      border-top-left-radius: 22em;
+      border-top-right-radius: 22em;
+    }
+
+    .big-pizza-list {
       display: none;
     }
 
-    .pizza-img-div {
-      height: 12em;
-      width: 24em;
-      border-top-left-radius: 24em;
-      border-top-right-radius: 24em;
+    .mobile-pizza-list {
+      margin-right: 1em;
+      padding-left: 0px;
     }
 
+    .mobile-pizza-list li {
+      text-align: center;
+      padding: 3px;
+      list-style: none;
+      /* border: 1px dashed white;
+      border-radius: 15%; */
+    }
+
+    .mobile-pizza-list li:not(:first-child) {
+      margin-top: 4px;
+      padding-top: 4px;
+      border-top: 1px solid white;
+    }
+
+    .mobile-pizza-list li a {
+      font-size: 1.25em;
+      color: white;
+      text-decoration: none;
+    }
 
   }
 
