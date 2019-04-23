@@ -117,6 +117,7 @@ nav input {
     border-radius: 50%;
     width: 2.5em;
     height: 2.5em;
+    font-size: 1em;
 }
 
 /* bottom checkout  */
@@ -265,10 +266,17 @@ nav input {
   /*  -----media queries---- */
 
   @media only screen and (max-width: 775px) {
+
+    body {
+      width: 95%;
+      border: 2px solid white;
+    }
+
     nav {
       border-bottom: white 1px solid;
       height: 3em;
-      margin: 0;
+      margin: 12px;
+      padding: 5px 0px;
     }
 
     .expand-button {
@@ -280,27 +288,25 @@ nav input {
     .main-content {
       width: 90%;
       height: 7em;
-      margin-bottom: 0;
+      margin-bottom: 0; 
     }
 
     .main-content-top {
       margin-bottom: 0px;
       display: flex;
       align-items: flex-end;
-      justify-content: space-between;
     }
 
     .pizza-type-display-div {
       font-size: .75em;
       margin-top: 1em;
-      border-right: 1px solid white;
+      border-right: 1px dashed white;
       padding-right: 3%;
       max-width: 120px;
     }
 
     .pizza-size-div {
       margin-bottom: 0;
-      padding-right: 1em;
     }
 
     .pizza-size-div h5 {
@@ -317,7 +323,7 @@ nav input {
     .bottom-checkout-div {
       margin-bottom: 0em;
       width: 7em;
-      border-left: 1px solid white;
+      border-left: 1px dashed white;
       padding: 2%;
     }
 
@@ -335,11 +341,11 @@ nav input {
 
     .bottom-pizza-div {
       width: 100%;
-      height: 28em;
-      /* margin-top: 150px; */
+      height: 100vh;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+      flex-direction: column;
     }
 
     .pizza-container-div {
@@ -347,18 +353,13 @@ nav input {
       width: 24em;
       border-top-left-radius: 24em;
       border-top-right-radius: 24em;
-      transform: rotate(90deg);
-      align-self: center;
-      position: relative;
-      left: -7em;
-      /* position: absolute;
-      left: -8em;
-      bottom: -21em; */
-      /* position: fixed;
-      left: -4em;
-      top: 20em; */
+      border-bottom: 1px solid white;
+      margin-top: -2em;
     }
 
+    .pizza-container-div ul {
+      display: none;
+    }
 
     .pizza-img-div {
       height: 11em;
@@ -372,8 +373,8 @@ nav input {
     }
 
     .mobile-pizza-list {
-      margin-right: 1em;
       padding-left: 0px;
+      width: 24em;
     }
 
     .mobile-pizza-list li {
@@ -387,7 +388,7 @@ nav input {
     .mobile-pizza-list li:not(:first-child) {
       margin-top: 4px;
       padding-top: 4px;
-      border-top: 1px solid white;
+      border-top: 1px dashed white;
     }
 
     .mobile-pizza-list li a {
@@ -396,6 +397,12 @@ nav input {
       text-decoration: none;
     }
 
+  }
+
+  @media only screen and (min-width: 775px) { 
+    .mobile-pizza-list {
+      display: none;
+    }
   }
 
 
