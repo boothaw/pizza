@@ -58,9 +58,9 @@ nav input {
   
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 80%;
-    height: 16em;
+    height: 18em;
     /* margin-bottom: 2em; */
 }
 
@@ -152,10 +152,6 @@ nav input {
   align-content: center;
 }
 
-.previous-orders {
-  margin-right: 4.4em;
-}
-
 .add-to-favorites {
   margin-left: -.5em;
 }
@@ -163,7 +159,7 @@ nav input {
 .basil-container{
   display: flex;
   justify-content: space-between;
-  margin-top: 7.5em;
+  margin-top: 4.5em;
 }
 
 /* pizza type selector */
